@@ -1,0 +1,22 @@
+<html>
+
+    <body>
+         <center>
+
+
+
+        <h1>Result of Heart Failure Rate</h1>
+    {%if prediction_text==1%}
+    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdNO6aJwyIkVmXxEXvqow6dpsFYmF_a-JqhwvUW8pCr0cBVI0I" alt="highrisk" width="250" height="200">
+
+        <h1 style="color:red;">High risk</h1>
+        <h2>Go consult a doctor</h2>
+    {%elif prediction_text==0%}
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcVbICcFnClu0PmBsU-gWuDq7DxlCqX6axnTLYJyC_OBRXL89j" alt="norisk" width="100" height="100">
+        <h1 style="color:green;">Congratulations</h1>
+        <h2>There is low risk</h2>
+    {%endif%}
+        </center>
+    </body></html>
+
+
